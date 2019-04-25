@@ -38,3 +38,4 @@ namespace NetCore.Models
         }
     }
 }
+
