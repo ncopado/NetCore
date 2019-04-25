@@ -3,7 +3,7 @@ namespace NetCore.Models
 {
     public class Album
     {
-        private MusicStoreContext context;
+       
 
         public int Id { get; set; }
 

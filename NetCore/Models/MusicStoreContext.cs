@@ -8,8 +8,6 @@ namespace NetCore.Models
     {
         public static string ConnectionString { get; set; }
 
-     
-
         public MusicStoreContext(string connectionString)
         {
             ConnectionString = connectionString;
