@@ -14,13 +14,9 @@ namespace NetCore.Controllers
         {
 
             //MusicStoreContext context = HttpContext.RequestServices.GetService(typeof(Models.MusicStoreContext)) as MusicStoreContext;
-
-
-         
-
-
             var lst = data.GetAllAlbums();
-            return View();
+
+            return View(lst);
 
         }
         public IActionResult About()

@@ -46,7 +46,7 @@ namespace NetCore
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
-            services.Add(new ServiceDescriptor(typeof(MusicStoreContext), new MusicStoreContext(Configuration.GetConnectionString("DefaultConnection"))));
+            services.Add(new ServiceDescriptor(typeof(DBContext), new DBContext(Configuration.GetConnectionString("DefaultConnection"))));
 
             //   services.AddDbContext<ApplicationDbContext>(options =>
             //   options.UseMySQL(Configuration.GetConnectionString("DefaultConnection")));

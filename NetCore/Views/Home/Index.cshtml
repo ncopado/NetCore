@@ -1,4 +1,12 @@
-﻿@{
+﻿@model List<NetCore.Models.Album>
+@{
     ViewData["Title"] = "Home Page";
 }
 
+@foreach  (var item in Model)
+{
+    <input type="text" value="@item.Id" />
+
+    <input type="text" value="@item.Name" />
+
+}
