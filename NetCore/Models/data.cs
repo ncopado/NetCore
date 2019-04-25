@@ -13,7 +13,7 @@ namespace NetCore.Models
         {
             List<Album> list = new List<Album>();
 
-            using (MySqlConnection conn =  MusicStoreContext.GetConnection())
+            using (MySqlConnection conn = DBContext.GetConnection())
             {
                 conn.Open();
                 MySqlCommand cmd = new MySqlCommand("getTest", conn)
