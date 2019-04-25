@@ -1,0 +1,7 @@
+﻿:root {
+    --mdc-theme-primary: #0f508e !important;
+    --mdc-theme-secondary: #feeae6 !important;
+    --mdc-theme-on-primary: #ffffff !important;
+    --mdc-theme-on-secondary: #442b2d !important;
+    --mdc-theme-text-primary-on-light: #ffffff !important;
+}

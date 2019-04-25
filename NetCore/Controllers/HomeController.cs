@@ -12,9 +12,17 @@ namespace NetCore.Controllers
     {
         public IActionResult Index()
         {
-            return View();
-        }
 
+            //MusicStoreContext context = HttpContext.RequestServices.GetService(typeof(Models.MusicStoreContext)) as MusicStoreContext;
+
+
+         
+
+
+            var lst = data.GetAllAlbums();
+            return View();
+
+        }
         public IActionResult About()
         {
             ViewData["Message"] = "Your application description page.";
