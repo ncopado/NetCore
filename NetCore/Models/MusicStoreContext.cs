@@ -4,11 +4,11 @@ using MySql.Data.MySqlClient;
 
 namespace NetCore.Models
 {
-    public class MusicStoreContext
+    public class DBContext
     {
         public static string ConnectionString { get; set; }
 
-        public MusicStoreContext(string connectionString)
+        public DBContext(string connectionString)
         {
             ConnectionString = connectionString;
         }
@@ -17,6 +17,8 @@ namespace NetCore.Models
         {
             return new MySqlConnection(ConnectionString);
         }
+
+
 
 
 
